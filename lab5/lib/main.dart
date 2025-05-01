@@ -6,5 +6,5 @@ import 'package:lab5/Tasks/task3.dart';
 void main() {
   // runApp(Task1());
   // runApp(Task2());
-  runApp(Task3());
+  // runApp(Task3());
 }
