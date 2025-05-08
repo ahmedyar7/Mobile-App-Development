@@ -1,14 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'providers/todos_provider.dart'; // ✅ import your provider
-import 'models/todo.dart'; // ✅ import the Todo model if needed
-// ... other imports
+import 'package:firebase_core/firebase_core.dart';
+import 'package:mad_lsbs/firebase_options.dart';
+import 'package:mad_lsbs/lab9/home_page.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
-  runApp(
-    ChangeNotifierProvider(
-      create: (context) => TodosProvider(),
-      child: const MyApp(),
-    ),
-  );
+void main() async {
+  await dotenv.load(); // Load environment variables
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  ); // fixed spelling
+  runApp(MyApp()); // Add your app entry point here
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(debugShowCheckedModeBanner: false, home: HomePage());
+  }
 }
