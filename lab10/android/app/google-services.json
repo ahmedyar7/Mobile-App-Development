@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1047282159973",
+    "project_id": "socialmediaapp-lab10",
+    "storage_bucket": "socialmediaapp-lab10.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047282159973:android:2e17a5d6ac690dee12918c",
+        "android_client_info": {
+          "package_name": "SocialMediaApp.lab10"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBcudaJVjcex85ClBjBlRqyCR-ccoyeDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047282159973:android:fc2dce35b431c1e812918c",
+        "android_client_info": {
+          "package_name": "com.example.lab10"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBcudaJVjcex85ClBjBlRqyCR-ccoyeDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
